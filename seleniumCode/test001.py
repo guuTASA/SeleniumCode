@@ -24,6 +24,8 @@ class RegisterNewUser(unittest.TestCase):
 		driver.find_element_by_id("password").clear()
 		driver.find_element_by_id("password").send_keys("12345X")
 		
+		sleep(10)
+		
 	def tearDown(self):
 		self.driver.quit()
 
